@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import alchemy from "../Utils/alchemyApi";
 import { Utils } from "alchemy-sdk";
@@ -12,14 +12,24 @@ const CheckBalance = () => {
   const handleCheckBalance = async () => {
     setLoading(true);
     try {
+      if (address.trim() === "") {
+        setBalance(null);
+        setLoading(false);
+        return;
+      }
       const balance = await alchemy.core.getBalance(address);
       setBalance(balance);
       setLoading(false);
     } catch (error) {
       console.error("Failed to fetch account balance:", error);
+      setBalance(null);
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    setBalance(null); // Reset balance when the component mounts
+  }, []);
 
   return (
     <div className="check-balance">
@@ -47,7 +57,9 @@ const CheckBalance = () => {
             </p>
             <p>
               Balance:{" "}
-              <span className="account-balance">{Utils.formatUnits(balance.toString(), "ether")} ETH</span>
+              <span className="account-balance">
+                {Utils.formatUnits(balance.toString(), "ether")} ETH
+              </span>
             </p>
           </div>
         )}

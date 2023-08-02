@@ -23,12 +23,17 @@ function App() {
         </nav>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/block/:blockNumber" component={BlockTransactions} />
           <Route
-            path="/transaction/:blockNumber/:transactionHash"
+            exact
+            path="/block/:blockNumber"
+            component={BlockTransactions}
+          />
+          <Route
+            exact
+            path="/block/:blockNumber/:transactionHash"
             component={TransactionReceipt}
           />
-          <Route path="/check-account-balance" component={AccountBalance} />
+          <Route exact path="/check-account-balance" component={AccountBalance} />
         </Switch>
       </div>
     </Router>

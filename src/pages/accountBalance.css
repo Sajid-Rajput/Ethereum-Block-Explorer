@@ -1,0 +1,90 @@
+/* CheckBalance.css */
+.check-balance {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.balance-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-form h2 {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.balance-result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.balance-result p {
+  font-size: 18px;
+  color: #333333;
+  margin: 5px 0;
+}
+
+.account-address,
+.account-balance {
+  font-weight: bold;
+}
+
+/* Back Link Styling */
+.back-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-link a {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.back-link a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}

@@ -1,0 +1,38 @@
+/* BlockTransactions.css */
+
+.block-transactions {
+  padding: 20px;
+}
+
+.transaction-info {
+  padding: 20px;
+}
+
+.transaction-item {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.transaction-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333333;
+}
+
+.transaction-item p {
+  margin: 5px 0;
+  color: #555555;
+}
+
+.transaction-item .value {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.transaction-item .hash {
+  font-size: 14px;
+  color: #777777;
+}

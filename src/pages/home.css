@@ -1,0 +1,37 @@
+/* Home.css */
+
+.home {
+  padding: 20px;
+}
+
+.block-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.block-item {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.block-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.block-item a:hover {
+  color: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #777777;
+}

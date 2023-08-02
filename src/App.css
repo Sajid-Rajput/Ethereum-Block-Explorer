@@ -1,0 +1,170 @@
+/* App.css */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.block-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.block-item {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.block-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.block-item a:hover {
+  color: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #777777;
+}
+
+.block-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.refresh-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for BlockTransactions component */
+
+.transaction-item {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.transaction-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333333;
+}
+
+.transaction-item p {
+  margin: 5px 0;
+  color: #555555;
+}
+
+.transaction-item .value {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.transaction-item .hash {
+  font-size: 14px;
+  color: #777777;
+}
+
+/* New Styles for a Beautiful Look */
+
+/* Header Styling */
+.App header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Back Link Styling */
+.back-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.back-link a:hover {
+  color: #0056b3;
+}
